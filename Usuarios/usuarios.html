@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="usuario.css">
+    <title>Usuarios</title>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h1 class="nav-title">Usuários</h1>
+    <div class="buttons-container">
+      <a href="CadastrarUsuario.html">
+          <button><i class="fas fa-user-plus"></i> Cadastrar Novo</button>
+      </a>
+      <a id="mostrarUsuariosLink">
+          <button id="mostrarUsuariosBtn"><i class="fas fa-users"></i> Mostrar Usuários</button>
+      </a>
+      <a href="../sistema.html">
+        <button><i class="fas fa-arrow-left"></i> Voltar pro Sistema</button>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="table-responsive tabela-responsiva" id="usuariosContainer" style="display: none;">
+    <table class="table table-striped" id="tabelaUsuarios">
+        <thead>
+            <tr>
+                <th class="nome-coluna">Nome</th>
+                <th class="nome-coluna">Data de Nascimento</th>
+                <th class="nome-coluna">CPF</th>
+                <th class="nome-coluna">Senha</th>
+                <th class="nome-coluna">Email</th>
+                <th class="nome-coluna">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- As linhas da tabela serão adicionadas aqui pelo JavaScript -->
+        </tbody>
+    </table>
+  </div>
+
+  <script src="usuarios.js" defer></script>
+</body>
+
+</html>
